@@ -224,27 +224,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Lazy loading for images
+// Image loading with proper handling
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll("img");
 
-  const imageObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        img.style.opacity = "0";
-        img.style.transition = "opacity 0.3s ease";
-
-        img.onload = function () {
-          img.style.opacity = "1";
-        };
-
-        imageObserver.unobserve(img);
-      }
-    });
-  });
-
   images.forEach((img) => {
-    imageObserver.observe(img);
+    // If image is already loaded, show it immediately
+    if (img.complete && img.naturalHeight !== 0) {
+      img.style.opacity = "1";
+    } else {
+      // Set initial opacity to 0 and fade in when loaded
+      img.style.opacity = "0";
+      img.style.transition = "opacity 0.3s ease";
+
+      img.onload = function () {
+        img.style.opacity = "1";
+      };
+
+      // Fallback for images that fail to load
+      img.onerror = function () {
+        img.style.opacity = "1";
+        console.warn("Image failed to load:", img.src);
+      };
+    }
   });
 });

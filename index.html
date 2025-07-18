@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TorquePro - Premium Torque Converters</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -20,12 +20,16 @@
       <div class="container">
         <div class="nav-brand">
           <h1><i class="fas fa-cog"></i> TorquePro</h1>
+          <div class="phone-number">
+            <i class="fas fa-phone"></i> CALL TODAY: 1-800-TORQUE-1
+          </div>
         </div>
         <nav class="nav">
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#brands">By Brand</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -47,10 +51,34 @@
       </div>
     </section>
 
+    <!-- Brand Categories Section -->
+    <section id="brands" class="brands">
+      <div class="container">
+        <h2>Shop by Vehicle Brand</h2>
+        <div class="brand-grid">
+          <div class="brand-card">
+            <h3><i class="fas fa-car"></i> GM / Chevrolet</h3>
+            <p>TH350, TH400, 4L60E, 4L80E, Allison</p>
+            <button class="brand-btn">View GM Converters</button>
+          </div>
+          <div class="brand-card">
+            <h3><i class="fas fa-truck"></i> Ford</h3>
+            <p>C4, C6, AOD, 4R70W, E40D, 4R100</p>
+            <button class="brand-btn">View Ford Converters</button>
+          </div>
+          <div class="brand-card">
+            <h3><i class="fas fa-car-side"></i> Dodge / Chrysler</h3>
+            <p>518, 618, 727, 904, 46RE, 47RE</p>
+            <button class="brand-btn">View Dodge Converters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Products Section -->
     <section id="products" class="products">
       <div class="container">
-        <h2>Our Products</h2>
+        <h2>Torque Converter Categories</h2>
         <div class="products-grid">
           <div class="product-card">
             <div class="product-image">
@@ -60,17 +88,30 @@
               />
             </div>
             <div class="product-info">
-              <h3>Heavy Duty Series</h3>
+              <h3>Heavy Duty Towing Series</h3>
               <p>
-                High-performance torque converter designed for heavy-duty
-                applications and racing.
+                Features billet steel front cover and modified lower stall for
+                maximum towing performance and fuel economy.
               </p>
               <div class="product-specs">
-                <span><i class="fas fa-check"></i> 2500-3000 RPM Stall</span>
-                <span><i class="fas fa-check"></i> Furnace Brazed</span>
-                <span><i class="fas fa-check"></i> 10" Diameter</span>
+                <span
+                  ><i class="fas fa-check"></i> 1800-2200 RPM Stall Range</span
+                >
+                <span
+                  ><i class="fas fa-check"></i> Furnace Brazed Internal
+                  Fins</span
+                >
+                <span
+                  ><i class="fas fa-check"></i> 10" Billet Steel Front
+                  Cover</span
+                >
+                <span><i class="fas fa-check"></i> Anti-Balloon Plate</span>
+                <span><i class="fas fa-check"></i> Torrington Bearings</span>
               </div>
-              <div class="product-price">$899.99</div>
+              <div class="product-price">FROM $395.00</div>
+              <div class="core-exchange">
+                *Core exchange available - $100 core charge without core
+              </div>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
@@ -85,15 +126,30 @@
             <div class="product-info">
               <h3>Street Performance</h3>
               <p>
-                Perfect balance of performance and drivability for street
-                applications.
+                10" lock-up converter with dual bolt pattern for small block and
+                big block applications. Custom stall ranges available.
               </p>
               <div class="product-specs">
-                <span><i class="fas fa-check"></i> 2000-2500 RPM Stall</span>
-                <span><i class="fas fa-check"></i> Multi-Plate Clutch</span>
-                <span><i class="fas fa-check"></i> 9.5" Diameter</span>
+                <span
+                  ><i class="fas fa-check"></i> 2800-3200 RPM Stall Range</span
+                >
+                <span
+                  ><i class="fas fa-check"></i> Dual Bolt Pattern SB/BB</span
+                >
+                <span
+                  ><i class="fas fa-check"></i> 10" Billet Steel Front
+                  Cover</span
+                >
+                <span
+                  ><i class="fas fa-check"></i> Enclosed Torrington
+                  Bearings</span
+                >
+                <span><i class="fas fa-check"></i> Brazed Internal Parts</span>
               </div>
-              <div class="product-price">$649.99</div>
+              <div class="product-price">FROM $375.00</div>
+              <div class="core-exchange">
+                *Fits TH350, TH400, 700R4, 4L60E transmissions
+              </div>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
@@ -106,17 +162,26 @@
               />
             </div>
             <div class="product-info">
-              <h3>Racing Series</h3>
+              <h3>Pro Racing Series</h3>
               <p>
-                Professional-grade torque converter for competitive racing
-                applications.
+                Custom matched racing converters with billet steel front covers.
+                Handles up to 1500 HP. Not modified OEM converters.
               </p>
               <div class="product-specs">
-                <span><i class="fas fa-check"></i> 3000-4000 RPM Stall</span>
-                <span><i class="fas fa-check"></i> Billet Steel</span>
-                <span><i class="fas fa-check"></i> 10.5" Diameter</span>
+                <span
+                  ><i class="fas fa-check"></i> 3000-5500 RPM Stall Range</span
+                >
+                <span
+                  ><i class="fas fa-check"></i> Billet Steel Front Cover</span
+                >
+                <span
+                  ><i class="fas fa-check"></i> 9" High Performance Design</span
+                >
+                <span><i class="fas fa-check"></i> Trans Brake Compatible</span>
+                <span><i class="fas fa-check"></i> Up to 1500 HP Rating</span>
               </div>
-              <div class="product-price">$1,299.99</div>
+              <div class="product-price">FROM $600.00</div>
+              <div class="core-exchange">*With Trans Brake: FROM $750.00</div>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
@@ -129,17 +194,21 @@
               />
             </div>
             <div class="product-info">
-              <h3>OEM Replacement</h3>
+              <h3>OEM Replacement Stock</h3>
               <p>
-                Direct replacement torque converter for stock applications and
-                daily drivers.
+                Direct replacement converters manufactured with OEM quality or
+                higher. Perfect for stock applications and daily drivers.
               </p>
               <div class="product-specs">
-                <span><i class="fas fa-check"></i> 1800-2200 RPM Stall</span>
+                <span><i class="fas fa-check"></i> Stock Stall Speed</span>
                 <span><i class="fas fa-check"></i> OEM Specifications</span>
-                <span><i class="fas fa-check"></i> 9" Diameter</span>
+                <span><i class="fas fa-check"></i> Multiple Transmissions</span>
+                <span><i class="fas fa-check"></i> 12-Month Warranty</span>
               </div>
-              <div class="product-price">$449.99</div>
+              <div class="product-price">FROM $205.00</div>
+              <div class="core-exchange">
+                *Available for TH700R4, 4L60, 4L60E, 4L65E
+              </div>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
@@ -152,17 +221,27 @@
               />
             </div>
             <div class="product-info">
-              <h3>Diesel Series</h3>
+              <h3>Diesel Performance</h3>
               <p>
-                Heavy-duty torque converter specifically designed for diesel
-                applications.
+                Heavy-duty converters specifically designed for diesel
+                applications with reinforced construction for maximum
+                durability.
               </p>
               <div class="product-specs">
-                <span><i class="fas fa-check"></i> 1600-2000 RPM Stall</span>
+                <span
+                  ><i class="fas fa-check"></i> 1600-2000 RPM Stall Range</span
+                >
                 <span><i class="fas fa-check"></i> Reinforced Housing</span>
-                <span><i class="fas fa-check"></i> 11" Diameter</span>
+                <span
+                  ><i class="fas fa-check"></i> Billet Steel Construction</span
+                >
+                <span><i class="fas fa-check"></i> Diesel Specific Design</span>
+                <span><i class="fas fa-check"></i> Heavy Duty Rating</span>
               </div>
-              <div class="product-price">$799.99</div>
+              <div class="product-price">FROM $395.00</div>
+              <div class="core-exchange">
+                *Fits GM Duramax, Ford Powerstroke, Dodge Cummins
+              </div>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
@@ -175,19 +254,72 @@
               />
             </div>
             <div class="product-info">
-              <h3>Custom Build</h3>
+              <h3>Custom Application</h3>
               <p>
-                Fully customizable torque converter built to your exact
-                specifications.
+                Custom matched converters built to your exact specifications.
+                Our technical team will help match the perfect converter for
+                your application.
               </p>
               <div class="product-specs">
                 <span><i class="fas fa-check"></i> Custom Stall Speed</span>
-                <span><i class="fas fa-check"></i> Application Specific</span>
-                <span><i class="fas fa-check"></i> Various Sizes</span>
+                <span><i class="fas fa-check"></i> Application Matched</span>
+                <span><i class="fas fa-check"></i> Technical Support</span>
+                <span
+                  ><i class="fas fa-check"></i> Various Sizes Available</span
+                >
+                <span
+                  ><i class="fas fa-check"></i> Professional Consultation</span
+                >
               </div>
-              <div class="product-price">Starting at $999.99</div>
+              <div class="product-price">CALL FOR PRICING</div>
+              <div class="core-exchange">
+                *Custom builds require vehicle and engine specifications
+              </div>
               <button class="add-to-cart">Request Quote</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2>TorquePro Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Technical Support</h3>
+            <p>
+              Our technical support department has many years of experience
+              helping both racers and street vehicles with converter matching
+              and transmission issues.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Fast Shipping</h3>
+            <p>
+              We ship over 97% of all orders the same day received. Standard UPS
+              Ground shipping with expedited options available.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-tools"></i>
+            <h3>Custom Matching</h3>
+            <p>
+              Our order desk staff has experience in all aspects of torque
+              converter application. Provide vehicle info and we'll match the
+              right converter.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>12-Month Warranty</h3>
+            <p>
+              All torque converters are warranted free from defects in material
+              and workmanship for 12 months under normal use.
+            </p>
           </div>
         </div>
       </div>
@@ -198,36 +330,21 @@
       <div class="container">
         <div class="about-content">
           <div class="about-text">
-            <h2>Why Choose TorquePro?</h2>
+            <h2>Professional Torque Converter Specialists</h2>
             <p>
-              With over 30 years of experience in the automotive industry,
-              TorquePro has been the trusted choice for performance enthusiasts,
-              professional mechanics, and racing teams worldwide.
+              With over 30 years of experience, TorquePro specializes in
+              high-quality torque converters for street, racing, towing, and
+              diesel applications. Our converters feature the same quality or
+              higher than OEM parts.
             </p>
-            <div class="features">
-              <div class="feature">
-                <i class="fas fa-award"></i>
-                <h3>Premium Quality</h3>
-                <p>
-                  All our torque converters are manufactured to the highest
-                  standards using premium materials.
-                </p>
-              </div>
-              <div class="feature">
-                <i class="fas fa-tools"></i>
-                <h3>Expert Engineering</h3>
-                <p>
-                  Designed by experienced engineers with decades of transmission
-                  expertise.
-                </p>
-              </div>
-              <div class="feature">
-                <i class="fas fa-shipping-fast"></i>
-                <h3>Fast Shipping</h3>
-                <p>
-                  Quick turnaround times with nationwide shipping available.
-                </p>
-              </div>
+            <div class="warranty-info">
+              <h3>About Our Warranty</h3>
+              <p>
+                TorquePro warrants that any torque converter sold will be free
+                from defects in material and workmanship for 12 months under
+                normal use. Our sole obligation during this warranty period
+                shall be to repair or replace at no charge to the consumer.
+              </p>
             </div>
           </div>
           <div class="about-image">
